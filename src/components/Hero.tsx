@@ -75,7 +75,7 @@ export const Herofn = ({ img, title }: HeroProp) => {
         alt=""
         height={500}
         width={1000}
-        style={{'objectFit':'fill'}}
+        // style={{'objectFit':'fill'}}
       />
       <div className="bg-black absolute w-full h-full z-10 opacity-[0.6]" />
       <div
