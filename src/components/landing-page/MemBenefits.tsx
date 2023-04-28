@@ -3,8 +3,6 @@ import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
 import { motion } from "framer-motion";
-import BenefitImg1 from '../../assets/1.jpg'
-import BenefitImg2 from '../../assets/2.jpg'
 const MemBenefits = () => {
   return (
     <motion.div
@@ -36,7 +34,7 @@ const MemBenefits = () => {
       </div>
       <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
         <Image
-          src={BenefitImg1}
+          src={'/1.jpg'}
           alt=""
           width={250}
           height={370}
@@ -44,7 +42,7 @@ const MemBenefits = () => {
           className="bottom-3 left-3 relative z-10"
         />
         <Image
-          src={BenefitImg2}
+          src={'/2.jpg'}
           alt=""
           width={250}
           height={370}

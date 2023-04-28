@@ -3,8 +3,6 @@ import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
 import { motion } from "framer-motion";
-import AdvocteIm1 from '../../assets/Advocacy Visit to Just Food Limited.jpg'
-import AdvocteIm2 from '../../assets/Advocacy Visit to Kwara Internal Revenue Service.jpg'
 
 
 
@@ -59,13 +57,13 @@ const Advocacy = () => {
         title="Advocacy Visit to Just Food Limited"
         content=""
         date=""
-        img={AdvocteIm1}
+        img={'/Advocacy Visit to Just Food Limited.jpg'}
         />
         <Advocate 
            title="Advocacy Visit to Kwara Internal Revenue Service"
            content=""
            date=""
-           img={AdvocteIm2}
+           img={'/dvocacy Visit to Kwara Internal Revenue Service.jpg'}
         />
       </div>
       <div className="flex justify-center">
