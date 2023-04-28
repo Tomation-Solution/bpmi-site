@@ -24,7 +24,7 @@ export default function Home() {
       <main className={""}>
         <Layout>
           <Herofn
-            img={"g"}
+            img={"boss"}
             title={
               "Promoting the practice of Business Process Management in Nigeria"
             }
