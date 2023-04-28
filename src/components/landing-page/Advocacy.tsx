@@ -3,12 +3,23 @@ import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
 import { motion } from "framer-motion";
+import AdvocteIm1 from '../../assets/Advocacy Visit to Just Food Limited.jpg'
+import AdvocteIm2 from '../../assets/Advocacy Visit to Kwara Internal Revenue Service.jpg'
 
-const Advocate = () => {
+
+
+
+type Advocate ={
+  title:string,
+  date:string;
+  content:string;
+  img:any
+}
+const Advocate = ({title,date,content,img}:Advocate) => {
   return (
     <div className="flex flex-col sm:flex-row items-center mb-8">
       <Image
-        src={"/groupMeeting.jpg"}
+        src={img}
         alt=""
         width={300}
         height={300}
@@ -16,16 +27,16 @@ const Advocate = () => {
       />
       <div className=" flex flex-col justify-between h-full">
         <h4 className="text-[#00305E]  xl:max-w-xs leading-7 text-[25px] md:text-[30px] font-semibold  font-play mb-3 ">
-          Borem ipsum dolor sit amet, consectetur adipiscing elit.
+         {title}
         </h4>
         <h5 className="text-primary text-[16px] md:text-[21px] font-normal  font-play mb-3 ">
-          January 2, 2023
+         {date}
         </h5>
         <p className="text-darkText leading-none text-[18px] md:text-[25px] font-normal  font-play mb-3 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+         {content}
         </p>
         <h5 className="text-darkText text-[16px] md:text-[21px] font-normal  font-play mb-3 ">
-          Date: 22 Jan 2022
+        {date}
         </h5>
       </div>
     </div>
@@ -44,8 +55,18 @@ const Advocacy = () => {
         ADVOCACY
       </h3>
       <div className="flex flex-col xl:flex-row justify-between md:justify-around ">
-        <Advocate />
-        <Advocate />
+        <Advocate
+        title="Advocacy Visit to Just Food Limited"
+        content=""
+        date=""
+        img={AdvocteIm1}
+        />
+        <Advocate 
+           title="Advocacy Visit to Kwara Internal Revenue Service"
+           content=""
+           date=""
+           img={AdvocteIm2}
+        />
       </div>
       <div className="flex justify-center">
         <PLink

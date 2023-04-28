@@ -3,7 +3,6 @@ import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
 import { motion } from "framer-motion";
-
 const AboutUs = () => {
   return (
     <motion.div
@@ -12,16 +11,18 @@ const AboutUs = () => {
       transition={{ duration: 1.5, type: "spring" }}
       className={`my-3 md:my-10 flex flex-col-reverse xl:flex-row items-center `}
     >
-      <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
+      <div 
+      className="relative flex mt-20 mr-20 xl:mt-0  xl:min-w-[400px]"
+      >
         <Image
-          src={"/union.jpg"}
+          src={"/about1.JPG"}
           alt=""
           width={250}
           height={370}
           className="bottom-3 left-3 relative z-10"
         />
         <Image
-          src={"/penDown.jpg"}
+          src={"/about2.JPG"}
           alt=""
           width={250}
           height={370}

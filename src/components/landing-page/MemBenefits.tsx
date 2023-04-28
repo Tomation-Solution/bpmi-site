@@ -3,7 +3,8 @@ import React from "react";
 import PLink from "../PLink";
 import styles from "../style";
 import { motion } from "framer-motion";
-
+import BenefitImg1 from '../../assets/1.jpg'
+import BenefitImg2 from '../../assets/2.jpg'
 const MemBenefits = () => {
   return (
     <motion.div
@@ -26,20 +27,24 @@ const MemBenefits = () => {
         </p>
         <PLink
           text="Learn More"
-          href="membership"
+          href="#"
           styles="bg-primary text-white  p-4"
+          onClick={()=>{
+            window.open('https://bpmi.rel8membership.com/','_blank')
+          }}
         />
       </div>
       <div className="relative flex mt-20 xl:mt-0  xl:min-w-[400px]">
         <Image
-          src={"/union.jpg"}
+          src={BenefitImg1}
           alt=""
           width={250}
           height={370}
+          style={{'objectFit':'contain'}}
           className="bottom-3 left-3 relative z-10"
         />
         <Image
-          src={"/penDown.jpg"}
+          src={BenefitImg2}
           alt=""
           width={250}
           height={370}

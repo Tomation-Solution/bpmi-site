@@ -41,8 +41,11 @@ const Hero = ({ img, title }: HeroProp) => {
         </motion.h1>
         <PLink
           styles="bg-white text-primary rounded-lg px-5 mt-8"
-          href="membership"
+          href="#"
           text="Become A Member"
+          onClick={()=>{
+            window.open('https://bpmi.rel8membership.com/','_blank')
+          }}
         />
       </div>
       {/* <Image
