@@ -122,19 +122,15 @@ const GetMore = () => {
                 Join Our Upcoming Events
               </h2>
               <div className="">
-                {[28, 22, 15, 5].map((a) => (
-                  <div key={a} className="flex  border-b border-[#DBDBDB] py-2">
+                {events.map((a,index) => (
+                  <div key={index} className="flex  border-b border-[#DBDBDB] py-2">
                     <div className="font-semibold text-[#00305E] text-[21px] font-inter mr-6">
                       <p className="text-[12px]  border-b-2 border-[#9ACA3C] pb-1 ">
-                        Dec
+                       {a.date}
                       </p>
-                      {a}
                     </div>
                     <p className="font-inter font-normal text-[20px] text-gray ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis.
-                    </p>
+                      {a.title}                    </p>
                   </div>
                 ))}
               </div>

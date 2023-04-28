@@ -41,7 +41,7 @@ const Gallery = () => {
             className="col-span-1 row-span-2 "
           />
 <Image
-            src={"/g.JPG"}
+            src={"/boss.jpg"}
             alt=""
             width={500}
             height={200}
