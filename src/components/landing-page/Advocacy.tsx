@@ -63,7 +63,7 @@ const Advocacy = () => {
            title="Advocacy Visit to Kwara Internal Revenue Service"
            content=""
            date=""
-           img={'/dvocacy Visit to Kwara Internal Revenue Service.jpg'}
+           img={'/adv.jpg'}
         />
       </div>
       <div className="flex justify-center">
