@@ -41,8 +41,11 @@ const Hero = ({ img, title }: HeroProp) => {
         </motion.h1>
         <PLink
           styles="bg-white text-primary rounded-lg px-5 mt-8"
-          href="membership"
+          href="#"
           text="Become A Member"
+          onClick={()=>{
+            window.open('https://bpmi.rel8membership.com/','_blank')
+          }}
         />
       </div>
       {/* <Image
@@ -72,6 +75,7 @@ export const Herofn = ({ img, title }: HeroProp) => {
         alt=""
         height={500}
         width={1000}
+        // style={{'objectFit':'fill'}}
       />
       <div className="bg-black absolute w-full h-full z-10 opacity-[0.6]" />
       <div

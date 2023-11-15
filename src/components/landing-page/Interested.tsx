@@ -15,8 +15,11 @@ const Interested = () => {
       </p>
       <PLink
         text="BECOME A MEMBER"
-        href="membership"
+        href="#"
         styles="bg-primary rounded-full p-4"
+        onClick={()=>{
+          window.open('https://bpmi.rel8membership.com/','_blank')
+        }}
       />
     </div>
   );
@@ -34,8 +37,11 @@ export const Interestedfn = () => {
 
         <PLink
           text="BECOME A MEMBER"
-          href="membership"
+          href="#"
           styles="bg-primary rounded-full p-4"
+          onClick={()=>{
+            window.open('https://bpmi.rel8membership.com/','_blank')
+          }}
         />
       </div>
     </div>

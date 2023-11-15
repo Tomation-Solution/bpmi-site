@@ -2,6 +2,17 @@ import React from "react";
 import { Button, Links, PLink, styles } from "..";
 import Image from "next/image";
 
+const datafortraning =[
+  {
+    name:'Understanding Business Process Management'
+  },
+  {
+    name:'Business Process Modelling & Analysis'
+  },
+  {
+    name:'Customer Experience Management'
+  },
+]
 const Events = () => {
   return (
     <section className="">
@@ -57,20 +68,20 @@ const Events = () => {
             </div>
 
             <div className="xl:grid-cols-4 md:grid-cols-2 grid gap-4 my-8">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((t) => (
+              {datafortraning.map((t,index) => (
                 <div
-                  key={t}
+                  key={index}
                   className="w-full pl-1  bg-gradient-to-b from-[#95C11F] to-[#88CDD3] mb-6"
                 >
                   <div className="w-full bg-white">
                     <h4 className="text-[#16A2B7] font-bold text-[16px] mb-6">
-                      Pre-retirement training
+                    {t.name}
                     </h4>
                     <p className="text-[#4A4A4A] font-bold text-[16px]">
-                      Members NGN10,000 / Non
+                      {/* Members NGN10,000 / Non */}
                     </p>
                     <p className="text-[#4A4A4A] font-bold text-[16px] mb-10">
-                      Members NGN20,000 + VAT
+                      {/* Members NGN20,000 + VAT */}
                     </p>
                     <PLink
                       href="services/event"

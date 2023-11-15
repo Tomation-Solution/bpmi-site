@@ -12,7 +12,36 @@ const Gallery = () => {
       <div className="flex flex-col xl:flex-row justify-between md:justify-around ">
         <div className="grid grid-flow-row-dense gap-3 md:grid-cols-3  w-full ">
           <Image
-            src={"/Rectangle1.jpg"}
+            src={"/g (1).JPG"}
+            alt=""
+            width={500}
+            height={200}
+            className="col-span-1 row-span-2 "
+          />
+
+          {/* <Image
+            src={"/g (4).JPG"}
+            alt=""
+            width={500}
+            height={200}
+            className="col-span-1"
+          /> */}
+          <Image
+            src={"/g (6).JPG"}
+            alt=""
+            width={500}
+            height={200}
+            className="col-span-1 row-span-2 "
+          />
+<Image
+            src={"/g (5).JPG"}
+            alt=""
+            width={500}
+            height={200}
+            className="col-span-1 row-span-2 "
+          />
+<Image
+            src={"/boss.jpg"}
             alt=""
             width={500}
             height={200}
@@ -20,22 +49,14 @@ const Gallery = () => {
           />
 
           <Image
-            src={"/Rectangle2.jpg"}
+            src={"/gal-4.jpg"}
             alt=""
             width={500}
             height={200}
             className="col-span-1"
           />
-          <Image
-            src={"/Rectangle3.jpg"}
-            alt=""
-            width={500}
-            height={200}
-            className="col-span-1 row-span-2 "
-          />
-
-          <Image
-            src={"/Rectangle4.jpg"}
+                    <Image
+            src={"/gal-8.jpg"}
             alt=""
             width={500}
             height={200}

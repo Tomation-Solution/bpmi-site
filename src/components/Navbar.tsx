@@ -97,6 +97,9 @@ const Navbar = () => {
         <PLink
           href="membership-benefits"
           text="Become A Member"
+          onClick={()=>{
+            window.open('https://bpmi.rel8membership.com/','_blank')
+          }}
           styles="border border-secondary text-secondary xl:flex hidden  ml-20 "
         />
         <div className="xl:hidden flex flex-1 justify-end items-center">
@@ -139,6 +142,9 @@ const Navbar = () => {
               <PLink
                 href="membership-benefits"
                 text="Become A Member"
+                onClick={()=>{
+                  window.open('https://bpmi.rel8membership.com/','_blank')
+                }}
                 styles="border border-secondary  text-secondary flex lg:hidden"
               />
             </div>
